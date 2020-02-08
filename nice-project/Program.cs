@@ -8,7 +8,7 @@ namespace NiceProject
         {
             Console.WriteLine("I'm doing some very important stuff!");
 
-            var fileReader = new StubFileReader();
+            var fileReader = new TextFileReader("../../../input.txt");
             
             var stuff = new ImportantStuff();
             var result = stuff.DoWhatNeedsToBeDone(fileReader);

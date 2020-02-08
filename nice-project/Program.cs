@@ -1,12 +1,19 @@
 ﻿using System;
 
-namespace nice_project
+namespace NiceProject
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("I'm doing some very important stuff!");
+
+            var fileReader = new StubFileReader();
+            
+            var stuff = new ImportantStuff();
+            var result = stuff.DoWhatNeedsToBeDone(fileReader);
+            
+            Console.WriteLine($"Result is {result}");
         }
     }
 }

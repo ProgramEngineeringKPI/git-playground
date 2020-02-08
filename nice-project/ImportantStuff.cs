@@ -16,11 +16,10 @@ namespace NiceProject
 
         private int CalculateSumOf(IEnumerable<int> allNumbers)
         {
-            var list = allNumbers.ToList();
             var sum = 0;
-            for (int i = 0; i < list.Count; i++)
+            foreach (var number in allNumbers)
             {
-                sum += list[i];
+                sum += number;
             }
 
             return sum;
